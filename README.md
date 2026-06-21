@@ -6,7 +6,7 @@
 
 ## What is CIPHER LINUX?
 
-CIPHER Linux is a Debian-based Linux distribution built for begineers entering the world of Linux and cybersecurity.
+CIPHER Linux is a Debian-based Linux distribution built for beginners entering the world of Linux and cybersecurity.
 
 Inspired by the confusion and curiosity of someone who wants to learn Linux and cybersecurity but doesn't know where to start — CIPHER Linux aims to bridge that gap.
 
@@ -24,7 +24,7 @@ Inspired by the confusion and curiosity of someone who wants to learn Linux and 
 
 ## Goals
 
-- Build a begineer friendly Linux distro
+- Build a beginner friendly Linux distro
 - Integrate cybersecurity tools in a guided way
 - Document everything openly for the community
 - Free distro, built by the community, for the community
