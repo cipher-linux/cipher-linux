@@ -33,7 +33,7 @@ Inspired by the confusion and curiosity of someone who wants to learn Linux and 
 
 ## Status 
 
-🚧 In Development — Building starts June 2026
+🚧 In Development — Building starts July 2026
 
 ---
 
