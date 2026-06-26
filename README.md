@@ -33,7 +33,7 @@ Inspired by the confusion and curiosity of someone who wants to learn Linux and 
 
 ## Status 
 
-🚧 In Development — Building starts July 2026
+🚧 In Development — Building starts **July 2026**
 
 ---
 
@@ -49,8 +49,8 @@ Inspired by the confusion and curiosity of someone who wants to learn Linux and 
 ---
 
 ## Follow our Journey
-
-GitHub: https://github.com/cipher-linux
+🐙 GitHub: [cipher-linux](https://github.com/cipher-linux)
+🌐 Website: Coming Soon
 
 ---
 
