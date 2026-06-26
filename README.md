@@ -37,14 +37,14 @@ Inspired by the confusion and curiosity of someone who wants to learn Linux and 
 
 ---
 
-## Team
+## 👥 Team
 
-| Role | Responsibility |
-|------|----------------|
-| Lead Builder | Distro architecture and build |
-| Testing & Feedback | Hardware and software testing |
-| Infrastructure | Hosting, repo, CDN |
-| Community & Marketing | Social media and community |
+| Avatar | Name | Role |
+|--------|------|------|
+| <img src="https://github.com/sachin-linux.png" width="40"/> | [sachin-linux](https://github.com/sachin-linux) | 🔧 Lead Builder |
+| <img src="https://github.com/Govindaraju5796.png" width="40"/> | [Govindaraju5796](https://github.com/Govindaraju5796) | 🖥️ Testing & Feedback |
+| <img src="https://github.com/Abhijith2620.png" width="40"/> | [Abhijith2620](https://github.com/Abhijith2620) | 🖥️ Testing & Feedback |
+| <img src="https://github.com/akhileshn15.png" width="40"/> | [akhileshn15](https://github.com/akhileshn15) | ☁️ Infrastructure & Hosting |
 
 ---
 
