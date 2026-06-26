@@ -48,7 +48,7 @@ Inspired by the confusion and curiosity of someone who wants to learn Linux and 
 
 ---
 
-## Follow our Journey 
+## Follow our Journey
 
 GitHub: https://github.com/cipher-linux
 
