@@ -1,4 +1,4 @@
-# Code of Conduct
+# Contributor Covenant Code of Conduct
 
 ## Our Pledge
 
@@ -23,7 +23,7 @@ Examples of unacceptable behavior:
 - Gatekeeping — mocking someone for being new or not knowing something
 - Any conduct which could reasonably be considered inappropriate in a professional setting
 
-## Enforcement
+## Enforcement Responsibilities
 
 Project maintainers are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate, fair corrective action in response to any behavior deemed inappropriate, threatening, offensive, or harmful.
 
