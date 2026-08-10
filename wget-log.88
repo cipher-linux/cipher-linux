@@ -1,0 +1,33 @@
+--2026-08-04 15:23:55--  https://http.kali.org/kali/dists/kali-rolling/non-free/Contents-amd64.gz
+Resolving http.kali.org (http.kali.org)... 54.39.128.230, 2607:5300:203:3fe6::
+Connecting to http.kali.org (http.kali.org)|54.39.128.230|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://mirrors.esto.network/kali/dists/kali-rolling/non-free/Contents-amd64.gz [following]
+--2026-08-04 15:23:56--  https://mirrors.esto.network/kali/dists/kali-rolling/non-free/Contents-amd64.gz
+Resolving mirrors.esto.network (mirrors.esto.network)... 103.147.151.222, 2403:8940:100:14::2
+Connecting to mirrors.esto.network (mirrors.esto.network)|103.147.151.222|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 888213 (867K) [application/gzip]
+Saving to: ‘cache/contents.chroot/kali-rolling/non-free/contents-amd64.gz’
+
+     0K .......... .......... .......... .......... ..........  5%  545K 1s
+    50K .......... .......... .......... .......... .......... 11% 1.07M 1s
+   100K .......... .......... .......... .......... .......... 17% 32.7M 1s
+   150K .......... .......... .......... .......... .......... 23% 1.09M 1s
+   200K .......... .......... .......... .......... .......... 28% 70.3M 0s
+   250K .......... .......... .......... .......... .......... 34%  103M 0s
+   300K .......... .......... .......... .......... .......... 40%  128M 0s
+   350K .......... .......... .......... .......... .......... 46% 1.10M 0s
+   400K .......... .......... .......... .......... .......... 51% 85.7M 0s
+   450K .......... .......... .......... .......... .......... 57%  112M 0s
+   500K .......... .......... .......... .......... .......... 63% 98.3M 0s
+   550K .......... .......... .......... .......... .......... 69%  111M 0s
+   600K .......... .......... .......... .......... .......... 74%  123M 0s
+   650K .......... .......... .......... .......... .......... 80% 99.4M 0s
+   700K .......... .......... .......... .......... .......... 86%  112M 0s
+   750K .......... .......... .......... .......... .......... 92% 1.13M 0s
+   800K .......... .......... .......... .......... .......... 97% 85.6M 0s
+   850K .......... .......                                    100%  192M=0.3s
+
+2026-08-04 15:23:57 (3.06 MB/s) - ‘cache/contents.chroot/kali-rolling/non-free/contents-amd64.gz’ saved [888213/888213]
+

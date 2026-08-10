@@ -1,0 +1,12 @@
+GRUB_DEFAULT=0
+GRUB_TIMEOUT=10
+GRUB_DISTRIBUTOR="CIPHER Linux"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+GRUB_CMDLINE_LINUX=""
+
+# Force video output mode for graphical themes
+GRUB_TERMINAL_OUTPUT="gfxterm"
+GRUB_GFXMODE="1024x768,auto"
+
+# Theme location
+GRUB_THEME="/boot/grub/themes/cipher/theme.txt"

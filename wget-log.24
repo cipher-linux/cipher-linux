@@ -1,0 +1,14 @@
+--2026-07-24 11:49:29--  http://archive.kali.org/kali/dists/kali-rolling/contrib/Contents-amd64.gz
+Resolving archive.kali.org (archive.kali.org)... 148.113.211.220, 2607:5300:214:dc00::
+Connecting to archive.kali.org (archive.kali.org)|148.113.211.220|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 188950 (185K) [application/gzip]
+Saving to: ‘cache/contents.chroot/kali-rolling/contrib/contents-amd64.gz’
+
+     0K .......... .......... .......... .......... .......... 27% 89.1M 0s
+    50K .......... .......... .......... .......... .......... 54%  102M 0s
+   100K .......... .......... .......... .......... .......... 81%  125M 0s
+   150K .......... .......... .......... ....                 100%  124M=0.002s
+
+2026-07-24 11:49:31 (107 MB/s) - ‘cache/contents.chroot/kali-rolling/contrib/contents-amd64.gz’ saved [188950/188950]
+

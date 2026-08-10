@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Install CIPHER Linux
+GenericName=Calamares Installer
+Exec=calamares-install-debian
+Comment=Install CIPHER Linux to your computer
+Keywords=calamares;system;install;cipher;installer
+Icon=/usr/share/icons/cipher/cipher.png
+Terminal=false
+Categories=Qt;System;
+StartupWMClass=calamares
+StartupNotify=True

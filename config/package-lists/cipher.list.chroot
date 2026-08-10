@@ -1,0 +1,9 @@
+sudo
+network-manager
+xfce4
+calamares
+calamares-settings-debian
+librsvg2-common
+plymouth
+initramfs-tools
+plymouth-label

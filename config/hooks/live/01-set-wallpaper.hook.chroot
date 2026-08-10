@@ -1,0 +1,4 @@
+#!/bin/sh
+update-alternatives --install /usr/share/images/desktop-base/desktop-background desktop-background /usr/share/backgrounds/cipher-wallpaper.png 100
+update-alternatives --set desktop-background /usr/share/backgrounds/cipher-wallpaper.png
+ln -sf /usr/share/backgrounds/cipher-wallpaper.png /usr/share/images/desktop-base/default

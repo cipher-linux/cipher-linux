@@ -1,0 +1,11 @@
+--2026-08-08 16:35:08--  https://kali.download/kali/dists/kali-rolling/non-free-firmware/Contents-amd64.gz
+Resolving kali.download (kali.download)... 104.17.254.239, 104.17.253.239, 2606:4700::6811:feef, ...
+Connecting to kali.download (kali.download)|104.17.254.239|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 40534 (40K) [application/gzip]
+Saving to: ‘cache/contents.chroot/kali-rolling/non-free-firmware/contents-amd64.gz’
+
+     0K .......... .......... .......... .........            100% 22.3M=0.002s
+
+2026-08-08 16:35:09 (22.3 MB/s) - ‘cache/contents.chroot/kali-rolling/non-free-firmware/contents-amd64.gz’ saved [40534/40534]
+

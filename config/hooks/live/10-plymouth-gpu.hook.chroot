@@ -1,0 +1,10 @@
+#!/bin/sh
+set -e
+
+mkdir -p /etc/initramfs-tools/modules
+
+grep -qxF 'amdgpu' /etc/initramfs-tools/modules || echo 'amdgpu' >> /etc/initramfs-tools/modules
+grep -qxF 'drm' /etc/initramfs-tools/modules || echo 'drm' >> /etc/initramfs-tools/modules
+grep -qxF 'drm_kms_helper' /etc/initramfs-tools/modules || echo 'drm_kms_helper' >> /etc/initramfs-tools/modules
+
+update-initramfs -u -k all

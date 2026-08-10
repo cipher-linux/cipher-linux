@@ -1,0 +1,31 @@
+#!/bin/bash
+LOG=/tmp/cipher-wallpaper.log
+echo "[$(date)] script started, waiting for xfdesktop" > "$LOG"
+
+for i in $(seq 1 20); do
+    if pgrep -x xfdesktop >/dev/null; then
+        echo "  xfdesktop found after ${i}s" >> "$LOG"
+        break
+    fi
+    sleep 1
+done
+sleep 2
+
+WALLPAPER="/usr/share/backgrounds/cipher/cipher-wallpaper.png"
+for prop in $(xfconf-query -c xfce4-desktop -l | grep -E "(image-path|last-image|last-single-image)$"); do
+    xfconf-query -c xfce4-desktop -p "$prop" -s "$WALLPAPER"
+done
+echo "  properties set (including last-single-image)" >> "$LOG"
+
+OLD_PID=$(pgrep -x xfdesktop)
+if [ -n "$OLD_PID" ]; then
+    kill "$OLD_PID"
+    for i in $(seq 1 10); do
+        pgrep -x xfdesktop >/dev/null || break
+        sleep 0.5
+    done
+fi
+
+setsid xfdesktop >/dev/null 2>&1 &
+disown
+echo "[$(date)] finished, killed pid=$OLD_PID, relaunched" >> "$LOG"

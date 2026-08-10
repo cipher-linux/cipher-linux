@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=CIPHER
+Description=CIPHER Linux boot splash
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/cipher
+ScriptFile=/usr/share/plymouth/themes/cipher/cipher.script

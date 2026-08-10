@@ -1,0 +1,9 @@
+NAME="CIPHER Linux"
+VERSION="1.0 (Enigma)"
+ID=cipher
+ID_LIKE=debian
+PRETTY_NAME="CIPHER Linux 1.0 Enigma"
+VERSION_ID="1.0"
+HOME_URL="https://github.com/cipher-linux"
+SUPPORT_URL="https://github.com/cipher-linux"
+BUG_REPORT_URL="https://github.com/cipher-linux/cipher-linux/issues"

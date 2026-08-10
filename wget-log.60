@@ -1,0 +1,19 @@
+--2026-08-02 19:07:43--  https://http.kali.org/kali/dists/kali-rolling/contrib/Contents-amd64.gz
+Resolving http.kali.org (http.kali.org)... 54.39.128.230, 2607:5300:203:3fe6::
+Connecting to http.kali.org (http.kali.org)|54.39.128.230|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://kali.download/kali/dists/kali-rolling/contrib/Contents-amd64.gz [following]
+--2026-08-02 19:07:44--  https://kali.download/kali/dists/kali-rolling/contrib/Contents-amd64.gz
+Resolving kali.download (kali.download)... 104.17.254.239, 104.17.253.239, 2606:4700::6811:fdef, ...
+Connecting to kali.download (kali.download)|104.17.254.239|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 188822 (184K) [application/gzip]
+Saving to: ‘cache/contents.chroot/kali-rolling/contrib/contents-amd64.gz’
+
+     0K .......... .......... .......... .......... .......... 27% 16.1M 0s
+    50K .......... .......... .......... .......... .......... 54% 3.56M 0s
+   100K .......... .......... .......... .......... .......... 81% 4.53M 0s
+   150K .......... .......... .......... ....                 100% 14.8M=0.03s
+
+2026-08-02 19:07:44 (6.04 MB/s) - ‘cache/contents.chroot/kali-rolling/contrib/contents-amd64.gz’ saved [188822/188822]
+

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=CIPHER Wallpaper
+Exec=/usr/local/bin/cipher-set-wallpaper
+NoDisplay=true
+OnlyShowIn=XFCE;

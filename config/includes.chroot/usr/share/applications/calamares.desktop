@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Install CIPHER Linux
+Comment=Install CIPHER Linux to your computer
+Exec=sudo calamares
+Icon=/usr/share/icons/cipher/cipher.png
+Terminal=false
+Categories=System;

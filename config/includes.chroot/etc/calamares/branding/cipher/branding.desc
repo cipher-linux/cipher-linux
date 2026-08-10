@@ -1,0 +1,24 @@
+---
+componentName:  cipher
+welcomeStyleCalamares: false
+welcomeExpandingLogo: true
+strings:
+    productName:         "CIPHER Linux"
+    shortProductName:    "CIPHER"
+    version:              "1.0"
+    shortVersion:         "1.0"
+    versionedName:        "CIPHER Linux 1.0 Enigma"
+    shortVersionedName:   "CIPHER 1.0"
+    bootloaderEntryName:  "CIPHER Linux"
+    productUrl:           "https://github.com/cipher-linux"
+    supportUrl:           "https://github.com/cipher-linux"
+images:
+    productLogo:         "logo.svg"
+    productIcon:          "logo.svg"
+style:
+    SidebarBackground:        "#1A1A1A"
+    SidebarText:               "#FFFFFF"
+    SidebarTextCurrent:        "#1A1A1A"
+    SidebarBackgroundCurrent:  "#00BCD4"
+slideshow: "show.qml"
+slideshowAPI: 2

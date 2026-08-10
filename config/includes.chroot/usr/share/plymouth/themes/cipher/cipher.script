@@ -1,0 +1,200 @@
+sudo tee /usr/share/plymouth/themes/cipher/cipher.script > /dev/null <<'EOF'
+Window.SetBackgroundTopColor(0.02, 0.02, 0.03);
+Window.SetBackgroundBottomColor(0.02, 0.02, 0.03);
+
+/*
+ * CIPHER Linux Plymouth Theme
+ *
+ * Continuous 14-frame animation.
+ * 00 -> 13 -> 00 -> 13 ...
+ */
+
+/* ---------------------------------------------------------
+ * Animation state
+ * --------------------------------------------------------- */
+
+frame_count = 14;
+current_frame = 0;
+frame_counter = 0;
+frame_every = 3;
+
+/* ---------------------------------------------------------
+ * Main animation frame
+ * --------------------------------------------------------- */
+
+frame_image = Image("frames/00.png");
+frame_sprite = Sprite(frame_image);
+
+frame_x = Window.GetWidth() / 2 - frame_image.GetWidth() / 2;
+frame_y = Window.GetHeight() / 2 - frame_image.GetHeight() / 2;
+
+frame_sprite.SetX(frame_x);
+frame_sprite.SetY(frame_y);
+
+/* ---------------------------------------------------------
+ * Eye glow
+ * --------------------------------------------------------- */
+
+glow_image = Image("eye-glow.png");
+glow_sprite = Sprite(glow_image);
+
+glow_x = Window.GetWidth() / 2 - glow_image.GetWidth() / 2;
+glow_y = Window.GetHeight() / 2 - glow_image.GetHeight() / 2;
+
+glow_sprite.SetX(glow_x);
+glow_sprite.SetY(glow_y);
+
+glow_opacity = 0.05;
+glow_direction = 1;
+
+/* ---------------------------------------------------------
+ * Progress bar
+ * --------------------------------------------------------- */
+
+bar_width = 400;
+bar_height = 6;
+
+bar_x = Window.GetWidth() / 2 - bar_width / 2;
+bar_y = Window.GetHeight() - 100;
+
+bar_track_image = Image.Text(
+    "",
+    0.10,
+    0.10,
+    0.12
+).Scale(
+    bar_width,
+    bar_height
+);
+
+bar_track_sprite = Sprite(bar_track_image);
+
+bar_track_sprite.SetX(bar_x);
+bar_track_sprite.SetY(bar_y);
+
+bar_fill_sprite = Sprite();
+
+bar_fill_sprite.SetX(bar_x);
+bar_fill_sprite.SetY(bar_y);
+
+/* ---------------------------------------------------------
+ * Frame loader
+ * --------------------------------------------------------- */
+
+fun set_frame(number) {
+
+    if (number == 0) {
+        frame_sprite.SetImage(Image("frames/00.png"));
+    } else if (number == 1) {
+        frame_sprite.SetImage(Image("frames/01.png"));
+    } else if (number == 2) {
+        frame_sprite.SetImage(Image("frames/02.png"));
+    } else if (number == 3) {
+        frame_sprite.SetImage(Image("frames/03.png"));
+    } else if (number == 4) {
+        frame_sprite.SetImage(Image("frames/04.png"));
+    } else if (number == 5) {
+        frame_sprite.SetImage(Image("frames/05.png"));
+    } else if (number == 6) {
+        frame_sprite.SetImage(Image("frames/06.png"));
+    } else if (number == 7) {
+        frame_sprite.SetImage(Image("frames/07.png"));
+    } else if (number == 8) {
+        frame_sprite.SetImage(Image("frames/08.png"));
+    } else if (number == 9) {
+        frame_sprite.SetImage(Image("frames/09.png"));
+    } else if (number == 10) {
+        frame_sprite.SetImage(Image("frames/10.png"));
+    } else if (number == 11) {
+        frame_sprite.SetImage(Image("frames/11.png"));
+    } else if (number == 12) {
+        frame_sprite.SetImage(Image("frames/12.png"));
+    } else if (number == 13) {
+        frame_sprite.SetImage(Image("frames/13.png"));
+    }
+}
+
+/* ---------------------------------------------------------
+ * Refresh callback
+ * --------------------------------------------------------- */
+
+fun refresh_callback() {
+
+    /*
+     * Advance animation every few Plymouth refreshes.
+     * This avoids depending on animation_time values.
+     */
+
+    frame_counter += 1;
+
+    if (frame_counter >= frame_every) {
+
+        frame_counter = 0;
+
+        current_frame += 1;
+
+        if (current_frame >= frame_count) {
+            current_frame = 0;
+        }
+
+        set_frame(current_frame);
+    }
+
+    /*
+     * Eye glow breathing.
+     */
+
+    if (glow_direction == 1) {
+
+        glow_opacity += 0.015;
+
+        if (glow_opacity >= 0.25) {
+            glow_opacity = 0.25;
+            glow_direction = -1;
+        }
+
+    } else {
+
+        glow_opacity -= 0.010;
+
+        if (glow_opacity <= 0.05) {
+            glow_opacity = 0.05;
+            glow_direction = 1;
+        }
+    }
+
+    glow_sprite.SetOpacity(glow_opacity);
+}
+
+/* ---------------------------------------------------------
+ * Boot progress callback
+ * --------------------------------------------------------- */
+
+fun boot_progress_callback(duration, progress) {
+
+    fill_width = bar_width * progress;
+
+    if (fill_width < 1) {
+        fill_width = 1;
+    }
+
+    fill_image = Image.Text(
+        "",
+        0.10,
+        0.75,
+        1
+    ).Scale(
+        fill_width,
+        bar_height
+    );
+
+    bar_fill_sprite.SetImage(fill_image);
+}
+
+/* ---------------------------------------------------------
+ * Plymouth callbacks
+ * --------------------------------------------------------- */
+
+Plymouth.SetRefreshFunction(refresh_callback);
+Plymouth.SetBootProgressFunction(boot_progress_callback);
+EOF
