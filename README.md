@@ -96,8 +96,6 @@ Contributions, bug reports, and testers are welcome. See [CONTRIBUTING.md](CONTR
 We're documenting the entire build process in the open — the wins and the multi-day debugging rabbit holes.
 
 - GitHub: [github.com/cipher-linux](https://github.com/cipher-linux)
-- LinkedIn: *(add link)*
-- Reddit: *(add link)*
 
 ## License
 
