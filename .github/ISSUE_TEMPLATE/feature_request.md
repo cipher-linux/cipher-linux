@@ -1,26 +1,19 @@
 ---
 name: Feature Request
-about: Suggest something to add or improve in CIPHER Linux
+about: Suggest an idea or improvement for CIPHER Linux
 title: "[FEATURE] "
 labels: enhancement
 assignees: ''
 ---
 
-## What's the idea?
-<!-- Describe what you want added or changed -->
+## Is your feature request related to a problem?
+A clear description of what the problem is (e.g. "It's hard to...").
 
+## Describe the solution you'd like
+What you want to happen.
 
-## Why does it matter?
-<!-- Who benefits, what problem does it solve -->
+## Describe alternatives you've considered
+Any alternative solutions or features you've thought about.
 
-
-## Related Module / Area
-<!-- e.g. O5 - Custom Repo, Branding, Welcome screen -->
-
-
-## Any examples?
-<!-- Other distros/tools that do this well, screenshots, links -->
-
-
-## Priority
-<!-- Pick one: Must-have for v1 / Nice-to-have / Future idea -->
+## Additional Context
+Mockups, references to other distros, links, or anything else useful.
