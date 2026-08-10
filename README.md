@@ -84,7 +84,7 @@ Full install guide will ship alongside the first public release. In short: CIPHE
 |---|---|
 | Lead Builder | [@sachin-linux](https://github.com/sachin-linux) |
 | Testing & Feedback | [@Govindaraju5796](https://github.com/Govindaraju5796), [@Abhijith2620](https://github.com/Abhijith2620), [@Shafiahamad059](https://github.com/Shafiahamad059) |
-| Infrastructure | TBD |
+| Infrastructure | [@akhileshn15](https://github.com/akhileshn15)  |
 | Community & Marketing | TBD |
 
 ## Contributing
