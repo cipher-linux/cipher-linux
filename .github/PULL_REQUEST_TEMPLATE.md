@@ -1,26 +1,22 @@
-## What Changed
+## Description
+What does this PR change, and why?
 
-<!-- Brief description of what this PR does -->
+## Related Issue
+Fixes #(issue number) — if applicable
 
+## Type of Change
+- [ ] Bug fix
+- [ ] New feature
+- [ ] Documentation update
+- [ ] Branding/design change
+- [ ] Build pipeline / packaging change
+- [ ] Other (describe below)
 
-## Related Module / Area
-
-<!-- e.g. O3 - live-build, Testing infra, Repo docs -->
-
-
-## How Was This Tested
-
-<!-- VM, real hardware, manual check, etc. Be specific -->
-
-
-## Screenshots (if applicable)
-
-<!-- Drag and drop images here -->
-
+## How Was This Tested?
+Describe how you tested this change (e.g. rebuilt ISO, booted in VM, ran script manually).
 
 ## Checklist
-
-- [ ] Tested locally before opening this PR
-- [ ] No unrelated changes bundled in
-- [ ] Commit messages follow the format in CONTRIBUTING.md
-- [ ] Ready for review (not a draft/WIP)
+- [ ] My changes follow the project's contribution guidelines
+- [ ] I've tested my changes locally
+- [ ] I've updated documentation if needed
+- [ ] I've linked the related issue (if any)
