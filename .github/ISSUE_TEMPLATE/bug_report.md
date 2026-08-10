@@ -1,35 +1,33 @@
 ---
 name: Bug Report
-about: Report something that failed during ISO testing
+about: Report something broken in CIPHER Linux
 title: "[BUG] "
-labels: bug, testing
+labels: bug
 assignees: ''
 ---
 
-## ISO Version / Build
-<!-- e.g. O3-v1, O4-v2 -->
+## Description
+A clear description of what the bug is.
 
-
-## Test Machine
-<!-- VM (VirtualBox/VMware) or real hardware - include model/specs -->
-
-
-## Round & Checklist Item
-<!-- e.g. Round 1 - "Installer completes start to finish successfully" -->
-
+## Steps to Reproduce
+1.
+2.
+3.
 
 ## Expected Behavior
-<!-- What should have happened -->
-
+What you expected to happen.
 
 ## Actual Behavior
-<!-- What actually happened - include error messages if any -->
+What actually happened.
 
+## Environment
+- **Install type:** Live ISO / Installed system
+- **Host:** VM (VirtualBox/VMware/other) or real hardware
+- **CIPHER Linux version/build:**
+- **Desktop:** XFCE / GNOME
 
-## Screenshot / Log (if available)
-<!-- Drag and drop image, or paste error log/output -->
+## Screenshots / Logs
+If applicable, add screenshots or relevant log output.
 
-
-## Severity
-<!-- Pick one: Blocking (stops install/boot) / Major (breaks key feature) / Minor (cosmetic, workaround exists) -->
-
+## Additional Context
+Anything else that might help us understand the issue.
