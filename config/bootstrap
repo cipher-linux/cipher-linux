@@ -46,7 +46,7 @@ LB_PARENT_MIRROR_CHROOT_SECURITY="http://security.debian.org/"
 
 # $LB_PARENT_MIRROR_CHROOT_VOLATILE: set volatile parent mirror to fetch packages from
 # (Default: https://kali.download/kali)
-LB_PARENT_MIRROR_CHROOT_VOLATILE=""
+LB_PARENT_MIRROR_CHROOT_VOLATILE="https://kali.download/kali"
 
 # $LB_PARENT_MIRROR_CHROOT_BACKPORTS: set backports parent mirror to fetch packages from
 # (Default: http://backports.debian.org/debian-backports/)
@@ -62,7 +62,7 @@ LB_PARENT_MIRROR_BINARY_SECURITY="http://security.debian.org/"
 
 # $LB_PARENT_MIRROR_BINARY_VOLATILE: set volatile parent mirror which ends up in the image
 # (Default: https://kali.download/kali)
-LB_PARENT_MIRROR_BINARY_VOLATILE=""
+LB_PARENT_MIRROR_BINARY_VOLATILE="https://kali.download/kali"
 
 # $LB_PARENT_MIRROR_BINARY_BACKPORTS: set backports parent mirror which ends up in the image
 # (Default: http://backports.debian.org/debian-backports/)
@@ -86,7 +86,7 @@ LB_MIRROR_CHROOT_SECURITY="http://security.debian.org/"
 
 # $LB_MIRROR_CHROOT_VOLATILE: set volatile mirror to fetch packages from
 # (Default: https://kali.download/kali)
-LB_MIRROR_CHROOT_VOLATILE=""
+LB_MIRROR_CHROOT_VOLATILE="https://kali.download/kali"
 
 # $LB_MIRROR_CHROOT_BACKPORTS: set backports mirror to fetch packages from
 # (Default: http://backports.debian.org/debian-backports/)
@@ -102,7 +102,7 @@ LB_MIRROR_BINARY_SECURITY="http://security.debian.org/"
 
 # $LB_MIRROR_BINARY_VOLATILE: set volatile mirror which ends up in the image
 # (Default: https://kali.download/kali)
-LB_MIRROR_BINARY_VOLATILE=""
+LB_MIRROR_BINARY_VOLATILE="https://kali.download/kali"
 
 # $LB_MIRROR_BINARY_BACKPORTS: set backports mirror which ends up in the image
 # (Default: http://backports.debian.org/debian-backports/)
@@ -135,3 +135,5 @@ LB_BOOTSTRAP_QEMU_EXCLUDE=""
 # $LB_BOOTSTRAP_QEMU_STATIC: static qemu binary for foreign bootstrap
 # (Default: )
 LB_BOOTSTRAP_QEMU_STATIC=""
+LB_VOLATILE="false"
+LB_SECURITY="false"
