@@ -7,3 +7,6 @@ librsvg2-common
 plymouth
 initramfs-tools
 plymouth-label
+network-manager-applet
+xfce4-power-manager
+xfce4-whiskermenu-plugin

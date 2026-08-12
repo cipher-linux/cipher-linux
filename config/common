@@ -58,7 +58,7 @@ LB_SYSTEM="live"
 LB_IMAGE_NAME="live-image"
 
 # Set options to use with apt
-APT_OPTIONS="--yes -o Acquire::Retries=5"
+APT_OPTIONS="--yes -o Acquire::Retries=5 -o Acquire::http::Timeout=30"
 
 # Set options to use with aptitude
 APTITUDE_OPTIONS="--assume-yes -o Acquire::Retries=5"
