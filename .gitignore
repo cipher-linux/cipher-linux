@@ -19,3 +19,5 @@ chroot.packages.live
 chroot.packages.remove
 config/binary
 wget-log*
+*.zsync*
+*.hybrid.iso
