@@ -74,3 +74,5 @@ LB_BOOTSTRAP_QEMU_EXCLUDE=""
 
 # Set static qemu binary for foreign bootstrap
 LB_BOOTSTRAP_QEMU_STATIC=""
+LB_VOLATILE="false"
+LB_SECURITY="false"
