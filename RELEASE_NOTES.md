@@ -17,19 +17,11 @@ before the final 1.0 release.
 
 ## Still In Progress (not in this build)
 
-- GRUB boot menu — restructured (CIPHER Linux / Advanced options /
-  Utilities), spacing and selection-highlight fixed
-- Plymouth boot splash — actively being worked on
-- Memtest86+ — deferred; current package format isn't compatible with
-  live-build's grub.cfg detection, needs a custom loopback boot entry
-- Lockscreen wallpaper — currently identical to desktop wallpaper;
-  a distinct lockscreen image is planned
-- Additional packages — package selection still being expanded
-- General desktop polish
-
-## What's Working 
-- Custom GRUB boot menu structure (CIPHER Linux / Advanced options /
-  Utilities) with clean selection highlight and tightened spacing
+* Plymouth boot splash — actively being worked on
+* Memtest86+ — deferred; current package format isn't compatible with live-build's grub.cfg detection, needs a custom loopback boot entry
+* Lockscreen wallpaper — currently identical to desktop wallpaper; a distinct lockscreen image is planned
+* Additional packages — package selection still being expanded
+* General desktop polish
   
 ## Download & Verify
 
