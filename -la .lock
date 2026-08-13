@@ -1,0 +1,168 @@
+[1mdiff --git a/config/bootstrap b/config/bootstrap[m
+[1mindex 9049d58..5f665c7 100644[m
+[1m--- a/config/bootstrap[m
+[1m+++ b/config/bootstrap[m
+[36m@@ -1,139 +1,76 @@[m
+ # config/bootstrap - options for live-build(7), bootstrap stage[m
+ [m
+[31m-# $LB_ARCHITECTURES: select chroot architectures[m
+[31m-# (Default: autodetected)[m
+[31m-LB_ARCHITECTURES="amd64"[m
+[32m+[m[32m# Select architecture to use[m
+[32m+[m[32mLB_ARCHITECTURE="amd64"[m
+ [m
+[31m-# $LB_BOOTSTRAP_INCLUDE: include packages on base[m
+[31m-# (Default: empty)[m
+[31m-LB_BOOTSTRAP_INCLUDE=""[m
+[32m+[m[32m# Select distribution to use[m
+[32m+[m[32mLB_DISTRIBUTION="kali-rolling"[m
+ [m
+[31m-# $LB_BOOTSTRAP_EXCLUDE: exclude packages on base[m
+[31m-# (Default: empty)[m
+[31m-LB_BOOTSTRAP_EXCLUDE=""[m
+[32m+[m[32m# Select parent distribution to use[m
+[32m+[m[32mLB_PARENT_DISTRIBUTION="kali-rolling"[m
+ [m
+[31m-# $LB_BOOTSTRAP_FLAVOUR: select flavour to use[m
+[31m-# (Default: empty)[m
+[31m-LB_BOOTSTRAP_FLAVOUR=""[m
+[32m+[m[32m# Select distribution to use in the chroot[m
+[32m+[m[32mLB_DISTRIBUTION_CHROOT="kali-rolling"[m
+ [m
+[31m-# $LB_BOOTSTRAP_KEYRING: set distribution keyring[m
+[31m-# (Default: empty)[m
+[31m-LB_BOOTSTRAP_KEYRING=""[m
+[32m+[m[32m# Select parent distribution to use in the chroot[m
+[32m+[m[32mLB_PARENT_DISTRIBUTION_CHROOT="kali-rolling"[m
+ [m
+[31m-# $LB_DISTRIBUTION: select distribution to use[m
+[31m-# (Default: kali-rolling)[m
+[31m-LB_DISTRIBUTION="kali-rolling"[m
+[32m+[m[32m# Select distribution to use in the final image[m
+[32m+[m[32mLB_DISTRIBUTION_BINARY="kali-rolling"[m
+ [m
+[31m-# $LB_PARENT_DISTRIBUTION: select parent distribution to use[m
+[31m-# (Default: kali-rolling)[m
+[31m-LB_PARENT_DISTRIBUTION="kali-rolling"[m
+[32m+[m[32m# Select parent distribution to use in the final image[m
+[32m+[m[32mLB_PARENT_DISTRIBUTION_BINARY="kali-rolling"[m
+ [m
+[31m-# $LB_PARENT_DEBIAN_INSTALLER_DISTRIBUTION: select parent distribution for debian-installer to use[m
+[31m-# (Default: kali-rolling)[m
+[32m+[m[32m# Select parent distribution for debian-installer to use[m
+ LB_PARENT_DEBIAN_INSTALLER_DISTRIBUTION="kali-rolling"[m
+ [m
+[31m-# $LB_PARENT_MIRROR_BOOTSTRAP: set parent mirror to bootstrap from[m
+[31m-# (Default: https://kali.download/kali)[m
+[32m+[m[32m# Select archive areas to use[m
+[32m+[m[32mLB_ARCHIVE_AREAS="main contrib non-free non-free-firmware"[m
+[32m+[m
+[32m+[m[32m# Select parent archive areas to use[m
+[32m+[m[32mLB_PARENT_ARCHIVE_AREAS="main contrib non-free non-free-firmware"[m
+[32m+[m
+[32m+[m[32m# Set parent mirror to bootstrap from[m
+ LB_PARENT_MIRROR_BOOTSTRAP="https://kali.download/kali"[m
+ [m
+[31m-# $LB_PARENT_MIRROR_CHROOT: set parent mirror to fetch packages from[m
+[31m-# (Default: https://kali.download/kali)[m
+[32m+[m[32m# Set parent mirror to fetch packages from[m
+ LB_PARENT_MIRROR_CHROOT="https://kali.download/kali"[m
+ [m
+[31m-# $LB_PARENT_MIRROR_CHROOT_SECURITY: set security parent mirror to fetch packages from[m
+[31m-# (Default: http://security.debian.org/)[m
+[32m+[m[32m# Set security parent mirror to fetch packages from[m
+ LB_PARENT_MIRROR_CHROOT_SECURITY="http://security.debian.org/"[m
+ [m
+[31m-# $LB_PARENT_MIRROR_CHROOT_VOLATILE: set volatile parent mirror to fetch packages from[m
+[31m-# (Default: https://kali.download/kali)[m
+[31m-LB_PARENT_MIRROR_CHROOT_VOLATILE="https://kali.download/kali"[m
+[31m-[m
+[31m-# $LB_PARENT_MIRROR_CHROOT_BACKPORTS: set backports parent mirror to fetch packages from[m
+[31m-# (Default: http://backports.debian.org/debian-backports/)[m
+[31m-LB_PARENT_MIRROR_CHROOT_BACKPORTS="http://backports.debian.org/debian-backports/"[m
+[31m-[m
+[31m-# $LB_PARENT_MIRROR_BINARY: set parent mirror which ends up in the image[m
+[31m-# (Default: https://kali.download/kali)[m
+[32m+[m[32m# Set parent mirror which ends up in the image[m
+ LB_PARENT_MIRROR_BINARY="https://kali.download/kali"[m
+ [m
+[31m-# $LB_PARENT_MIRROR_BINARY_SECURITY: set security parent mirror which ends up in the image[m
+[31m-# (Default: http://security.debian.org/)[m
+[32m+[m[32m# Set security parent mirror which ends up in the image[m
+ LB_PARENT_MIRROR_BINARY_SECURITY="http://security.debian.org/"[m
+ [m
+[31m-# $LB_PARENT_MIRROR_BINARY_VOLATILE: set volatile parent mirror which ends up in the image[m
+[31m-# (Default: https://kali.download/kali)[m
+[31m-LB_PARENT_MIRROR_BINARY_VOLATILE="https://kali.download/kali"[m
+[31m-[m
+[31m-# $LB_PARENT_MIRROR_BINARY_BACKPORTS: set backports parent mirror which ends up in the image[m
+[31m-# (Default: http://backports.debian.org/debian-backports/)[m
+[31m-LB_PARENT_MIRROR_BINARY_BACKPORTS="http://backports.debian.org/debian-backports/"[m
+[31m-[m
+[31m-# $LB_PARENT_MIRROR_DEBIAN_INSTALLER: set debian-installer parent mirror[m
+[31m-# (Default: https://kali.download/kali)[m
+[32m+[m[32m# Set debian-installer parent mirror[m
+ LB_PARENT_MIRROR_DEBIAN_INSTALLER="http://deb.debian.org/debian/"[m
+ [m
+[31m-# $LB_MIRROR_BOOTSTRAP: set mirror to bootstrap from[m
+[31m-# (Default: https://kali.download/kali)[m
+[32m+[m[32m# Set mirror to bootstrap from[m
+ LB_MIRROR_BOOTSTRAP="https://kali.download/kali"[m
+ [m
+[31m-# $LB_MIRROR_CHROOT: set mirror to fetch packages from[m
+[31m-# (Default: https://kali.download/kali)[m
+[32m+[m[32m# Set mirror to fetch packages from[m
+ LB_MIRROR_CHROOT="https://kali.download/kali"[m
+ [m
+[31m-# $LB_MIRROR_CHROOT_SECURITY: set security mirror to fetch packages from[m
+[31m-# (Default: http://security.debian.org/)[m
+[32m+[m[32m# Set security mirror to fetch packages from[m
+ LB_MIRROR_CHROOT_SECURITY="http://security.debian.org/"[m
+ [m
+[31m-# $LB_MIRROR_CHROOT_VOLATILE: set volatile mirror to fetch packages from[m
+[31m-# (Default: https://kali.download/kali)[m
+[31m-LB_MIRROR_CHROOT_VOLATILE="https://kali.download/kali"[m
+[31m-[m
+[31m-# $LB_MIRROR_CHROOT_BACKPORTS: set backports mirror to fetch packages from[m
+[31m-# (Default: http://backports.debian.org/debian-backports/)[m
+[31m-LB_MIRROR_CHROOT_BACKPORTS="http://backports.debian.org/debian-backports/"[m
+[31m-[m
+[31m-# $LB_MIRROR_BINARY: set mirror which ends up in the image[m
+[31m-# (Default: https://kali.download/kali)[m
+[32m+[m[32m# Set mirror which ends up in the image[m
+ LB_MIRROR_BINARY="https://kali.download/kali"[m
+ [m
+[31m-# $LB_MIRROR_BINARY_SECURITY: set security mirror which ends up in the image[m
+[31m-# (Default: http://security.debian.org/)[m
+[32m+[m[32m# Set security mirror which ends up in the image[m
+ LB_MIRROR_BINARY_SECURITY="http://security.debian.org/"[m
+ [m
+[31m-# $LB_MIRROR_BINARY_VOLATILE: set volatile mirror which ends up in the image[m
+[31m-# (Default: https://kali.download/kali)[m
+[31m-LB_MIRROR_BINARY_VOLATILE="https://kali.download/kali"[m
+[31m-[m
+[31m-# $LB_MIRROR_BINARY_BACKPORTS: set backports mirror which ends up in the image[m
+[31m-# (Default: http://backports.debian.org/debian-backports/)[m
+[31m-LB_MIRROR_BINARY_BACKPORTS="http://backports.debian.org/debian-backports/"[m
+[31m-[m
+[31m-# $LB_MIRROR_DEBIAN_INSTALLER: set debian-installer mirror[m
+[31m-# (Default: https://kali.download/kali)[m
+[32m+[m[32m# Set debian-installer mirror[m
+ LB_MIRROR_DEBIAN_INSTALLER="http://deb.debian.org/debian/"[m
+ [m
+[31m-# $LB_ARCHIVES: enable available third-party archives[m
+[31m-# (Default: empty)[m
+[31m-LB_ARCHIVES=""[m
+[31m-[m
+[31m-# $LB_ARCHIVE_AREAS: select archive areas to use[m
+[31m-# (Default: main contrib non-free non-free-firmware)[m
+[31m-LB_ARCHIVE_AREAS="main contrib non-free non-free-firmware"[m
+[31m-[m
+[31m-# $LB_PARENT_ARCHIVE_AREAS: select archive areas to use[m
+[31m-# (Default: main contrib non-free non-free-firmware)[m
+[31m-LB_PARENT_ARCHIVE_AREAS="main contrib non-free non-free-firmware"[m
+[31m-[m
+[31m-# $LB_BOOTSTRAP_QEMU_ARCHITECTURES: architectures to use foreign bootstrap[m
+[31m-# (Default: )[m
+[31m-LB_BOOTSTRAP_QEMU_ARCHITECTURES=""[m
+[32m+[m[32m# Set architectures to use foreign bootstrap[m
