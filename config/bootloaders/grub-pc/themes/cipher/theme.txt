@@ -50,8 +50,8 @@ title-text: ""
     top = 30%
     width = 45%
     height = 45%
-    item_height = 36
-    item_spacing = 8
+    item_height = 60
+    item_spacing = 16
     item_padding = 14
     icon_width = 0
     icon_height = 0
@@ -59,6 +59,7 @@ title-text: ""
     selected_item_font = "Cipher 18"
     item_color = "#c5d3e0"
     selected_item_color = "#ffffff"
+    selected_item_pixmap_style = "select_*.png"
 }
 # ---- Bottom-left info box ----
 + label {
@@ -72,7 +73,7 @@ title-text: ""
 }
 + label {
     left = 4%
-    top = 94%
+    top = 92%
     width = 40%
     height = 6%
     text = "A secure, privacy-first Linux distribution for hackers, builders and explorers."
