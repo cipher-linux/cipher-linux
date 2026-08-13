@@ -21,3 +21,5 @@ config/binary
 wget-log*
 *.zsync*
 *.hybrid.iso
+*.zsync*
+*.hybrid.iso
