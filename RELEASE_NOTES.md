@@ -25,13 +25,13 @@ before the final 1.0 release.
   
 ## Download & Verify
 
-- ISO: `cipher-linux-1.0-enigma-rc1-amd64.iso`
-- SHA256: `cipher-linux-1.0-enigma-rc1-amd64.iso.sha256`
-- Signature: `cipher-linux-1.0-enigma-rc1-amd64.iso.sha256.asc`
+    IISO: cipher-linux-rc1.iso
+    SHA256: cipher-linux-rc1.iso.sha256
+    Signature: cipher-linux-rc1.iso.asc
 
 To verify your download:
 
-\`\`\`bash
-sha256sum -c cipher-linux-1.0-enigma-rc1-amd64.iso.sha256
-gpg --verify cipher-linux-1.0-enigma-rc1-amd64.iso.sha256.asc
-\`\`\`
+```bash
+sha256sum -c cipher-linux-rc1.iso.sha256
+gpg --verify cipher-linux-rc1.iso.asc cipher-linux-rc1.iso
+```
