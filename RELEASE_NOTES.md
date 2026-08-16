@@ -10,6 +10,7 @@ before the final 1.0 release.
 
 - Boots and installs cleanly via Calamares
 - Custom GRUB boot theme (logo, colors, fonts)
+- Custom Plymouth boot splash animation
 - Branded desktop (XFCE) with CIPHER wallpaper and icons
 - Custom local apt repository pipeline
 - Custom GRUB boot menu structure (CIPHER Linux / Advanced options /
@@ -17,7 +18,6 @@ before the final 1.0 release.
 
 ## Still In Progress (not in this build)
 
-* Plymouth boot splash — actively being worked on
 * Memtest86+ — deferred; current package format isn't compatible with live-build's grub.cfg detection, needs a custom loopback boot entry
 * Lockscreen wallpaper — currently identical to desktop wallpaper; a distinct lockscreen image is planned
 * Additional packages — package selection still being expanded
@@ -25,7 +25,7 @@ before the final 1.0 release.
   
 ## Download & Verify
 
-    IISO: cipher-linux-rc1.iso
+    ISO: cipher-linux-rc1.iso
     SHA256: cipher-linux-rc1.iso.sha256
     Signature: cipher-linux-rc1.iso.asc
 
