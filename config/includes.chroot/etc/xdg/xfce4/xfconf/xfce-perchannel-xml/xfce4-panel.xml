@@ -3,6 +3,7 @@
   <property name="configver" type="int" value="2"/>
   <property name="panels" type="array">
     <value type="int" value="1"/>
+    <value type="int" value="2"/>
     <property name="panel-1" type="empty">
       <property name="length" type="uint" value="100"/>
       <property name="plugin-ids" type="array">
@@ -20,6 +21,18 @@
       <property name="position" type="string" value="p=6;x=0;y=0"/>
       <property name="position-locked" type="bool" value="true"/>
       <property name="size" type="uint" value="34"/>
+    </property>
+    <property name="panel-2" type="empty">
+      <property name="length" type="uint" value="1"/>
+      <property name="length-adjust" type="bool" value="true"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="11"/>
+      </property>
+      <property name="position" type="string" value="p=10;x=0;y=0"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="size" type="uint" value="48"/>
+      <property name="autohide-behavior" type="uint" value="1"/>
+      <property name="background-style" type="uint" value="0"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -46,5 +59,6 @@
     <property name="plugin-10" type="string" value="clock">
       <property name="digital-time-format" type="string" value="%_H:%M"/>
     </property>
+    <property name="plugin-11" type="string" value="docklike"/>
   </property>
 </channel>
