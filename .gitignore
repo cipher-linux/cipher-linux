@@ -3,7 +3,7 @@ chroot/
 .build/
 *.iso
 *.img
-*.zsync
+*.zsync*
 *.contents
 *.files
 *.packages
@@ -19,7 +19,7 @@ chroot.packages.live
 chroot.packages.remove
 config/binary
 wget-log*
-*.zsync*
 *.hybrid.iso
-*.zsync*
-*.hybrid.iso
+*.deb
+*.iso.asc
+*.iso.sha256

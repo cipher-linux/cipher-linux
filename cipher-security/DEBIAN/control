@@ -1,0 +1,10 @@
+Package: cipher-security
+Version: 1.0
+Section: metapackages
+Priority: optional
+Architecture: amd64
+Depends: john, hydra, nikto, keepassxc, tor, clamav, rkhunter, lynis
+Maintainer: CIPHER Linux <team@cipherlinux.org>
+Description: CIPHER Linux beginner security toolkit
+ Installs a curated, beginner-friendly set of cybersecurity tools for
+ CIPHER Linux users learning security fundamentals.

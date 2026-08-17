@@ -1,0 +1,10 @@
+Package: cipher-admin
+Version: 1.0
+Section: metapackages
+Priority: optional
+Architecture: amd64
+Depends: ncdu, tmux, rsync, tree, bat, lsof, iotop, ufw, gufw, timeshift
+Maintainer: CIPHER Linux <team@cipherlinux.org>
+Description: CIPHER Linux sysadmin toolkit
+ Installs core system administration tools for CIPHER Linux users
+ learning Linux system administration fundamentals.

@@ -1,0 +1,10 @@
+Package: cipher-devops
+Version: 1.0
+Section: metapackages
+Priority: optional
+Architecture: amd64
+Depends: docker.io, docker-compose, ansible
+Maintainer: CIPHER Linux <team@cipherlinux.org>
+Description: CIPHER Linux DevOps toolkit
+ Installs core DevOps and automation tools for CIPHER Linux users
+ learning DevOps fundamentals.

@@ -1,0 +1,10 @@
+Package: cipher-network
+Version: 1.0
+Section: metapackages
+Priority: optional
+Architecture: amd64
+Depends: nmap, wireshark, tshark, traceroute, whois, dnsutils, iperf3, tcpdump, arp-scan, netcat-openbsd, iproute2, iputils-ping, mtr-tiny
+Maintainer: CIPHER Linux <team@cipherlinux.org>
+Description: CIPHER Linux networking toolkit
+ Installs core networking and diagnostics tools for CIPHER Linux users
+ learning networking fundamentals.
