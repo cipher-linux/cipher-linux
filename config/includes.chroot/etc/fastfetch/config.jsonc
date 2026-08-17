@@ -1,6 +1,5 @@
 {
   "logo": {
-    "source": "/usr/share/icons/cipher/cipher.png",
-    "type": "auto"
+    "source": "/etc/fastfetch/cipher-logo.txt"
   }
 }
