@@ -1,0 +1,91 @@
+#!/bin/bash
+# cipher-welcome v2 — CIPHER Linux Learning Hub
+# On-demand guided menu. Points users to topics + the metapackage that unlocks
+# the tools for that topic. Does not install or launch anything itself (yet).
+
+check_pkg() {
+    dpkg -s "$1" &>/dev/null && echo "installed" || echo "missing"
+}
+
+show_topic() {
+    local title="$1"
+    local pkg="$2"
+    local blurb="$3"
+    local next="$4"
+
+    echo ""
+    echo "=== $title ==="
+    echo "$blurb"
+    echo ""
+
+    if [ -n "$pkg" ]; then
+        status=$(check_pkg "$pkg")
+        if [ "$status" = "installed" ]; then
+            echo "Toolkit status: $pkg is already installed."
+        else
+            echo "Toolkit status: $pkg is NOT installed yet."
+            echo "Run this to unlock the tools for this topic:"
+            echo "    sudo apt install $pkg"
+        fi
+        echo ""
+    fi
+
+    echo "Suggested next step:"
+    echo "  $next"
+}
+
+main_menu() {
+  while true; do
+    clear
+    echo "======================================="
+    echo "   CIPHER Linux — Learning Hub"
+    echo "======================================="
+    echo ""
+    echo "Pick a topic to see what it covers and how to get started."
+    echo ""
+    echo "  1) Linux Basics"
+    echo "  2) Networking"
+    echo "  3) System Administration"
+    echo "  4) Security"
+    echo "  5) Forensics"
+    echo "  6) DevOps"
+    echo "  7) CTF Practice"
+    echo "  q) Quit"
+    echo ""
+    if ! read -rp "Choose a topic: " choice; then
+        echo ""
+        exit 0
+    fi
+
+    case "$choice" in
+        1) show_topic "Linux Basics" "" \
+            "Core Linux fundamentals: the filesystem, permissions, processes, and the shell. No extra package needed — everything here runs with what's already on the base install." \
+            "Try 'man bash', or run 'htop' to see what's running on your system." ;;
+        2) show_topic "Networking" "cipher-network" \
+            "Diagnosing and inspecting networks: scanning, packet capture, DNS, and connectivity tools." \
+            "Once installed, try 'nmap -sV localhost' or 'traceroute google.com'." ;;
+        3) show_topic "System Administration" "cipher-admin" \
+            "Day-to-day sysadmin work: process management, backups, firewalls, monitoring." \
+            "Once installed, try 'tmux' for a session, or 'ufw status' to check the firewall." ;;
+        4) show_topic "Security" "cipher-security" \
+            "Beginner-friendly cybersecurity tools: password auditing, malware scanning, basic pentesting." \
+            "Once installed, try 'lynis audit system' for a safe first security scan." ;;
+        5) show_topic "Forensics" "cipher-forensics" \
+            "Digital forensics and CTF-style file analysis: extracting hidden data, examining file structure." \
+            "Once installed, try 'exiftool <somefile>' on any image to see what metadata reveals." ;;
+        6) show_topic "DevOps" "cipher-devops" \
+            "Automation and deployment tooling: containers, orchestration, infrastructure as code." \
+            "Once installed, try 'docker --version' to confirm it's ready to use." ;;
+        7) show_topic "CTF Practice" "cipher-security" \
+            "Capture-the-flag style challenges pull together security + forensics skills. Start with the Security and Forensics topics, then look for beginner CTF platforms online (e.g. picoCTF)." \
+            "Try the Security topic first if you haven't installed cipher-security yet." ;;
+        q|Q) echo "Happy hacking."; exit 0 ;;
+        *) echo "Not a valid option, try again." ;;
+    esac
+
+    echo ""
+    read -rp "Press Enter to return to the menu..." _
+  done
+}
+
+main_menu
