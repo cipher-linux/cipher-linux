@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "======================================="
+echo " Welcome to CIPHER Linux"
+echo "======================================="
+echo ""
+echo "Checking your setup..."
+echo "User: $(whoami)"
+echo "Shell: $SHELL"
+echo "Kernel: $(uname -r)"
+echo ""
+echo "You're all set. Happy hacking."

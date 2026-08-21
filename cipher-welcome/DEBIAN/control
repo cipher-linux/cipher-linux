@@ -1,0 +1,9 @@
+Package: cipher-welcome
+Version: 1.0.0
+Architecture: amd64
+Section: utils
+Priority: optional
+Maintainer: Sachin M <sachin@cipherlinux.org>
+Depends: bash
+Description: Welcome tool for CIPHER Linux
+ A simple onboarding script that greets new users and checks their initial system setup.

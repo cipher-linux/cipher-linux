@@ -1,0 +1,1 @@
+deb [signed-by=/usr/share/keyrings/cipher-repo.gpg] https://cipher-linux.github.io/cipher-repo/ stable main
