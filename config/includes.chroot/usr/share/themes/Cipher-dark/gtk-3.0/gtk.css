@@ -104,6 +104,7 @@ radio:active, row.activatable:active {
 }
 .view selection, .view:selected {
   background-color: rgba(242, 245, 248, 0.24);
+  color: black;
 }
 
 textview text {
@@ -149,6 +150,7 @@ flowbox flowboxchild {
 }
 flowbox flowboxchild:selected {
   background-color: rgba(242, 245, 248, 0.24);
+  color: black;
 }
 
 .content-view .tile:selected {
@@ -166,6 +168,7 @@ label.error {
 }
 label selection {
   background-color: rgba(242, 245, 248, 0.24);
+  color: black;
 }
 label:disabled {
   color: rgba(255, 255, 255, 0.38);
@@ -321,7 +324,7 @@ entry image {
 spinbutton:not(.vertical) image:hover, spinbutton:not(.vertical) image:active,
 entry image:hover,
 entry image:active {
-  color: rgba(255, 255, 255, 0.87);
+  color: black;
 }
 spinbutton:not(.vertical) image:disabled,
 entry image:disabled {
@@ -340,6 +343,7 @@ entry image.right {
 spinbutton:not(.vertical) selection,
 entry selection {
   background-color: rgba(242, 245, 248, 0.24);
+  color: black;
 }
 spinbutton.error:not(.vertical),
 entry.error {
@@ -967,6 +971,7 @@ modelbutton.flat:active,
 modelbutton.flat:selected,
 .menuitem.button.flat:selected {
   background-color: rgba(242, 245, 248, 0.24);
+  color: black;
 }
 
 modelbutton.flat arrow {
@@ -1651,7 +1656,7 @@ treeview.view.expander:checked {
   -gtk-icon-transform: unset;
 }
 treeview.view.expander:hover, treeview.view.expander:active {
-  color: rgba(255, 255, 255, 0.87);
+  color: black;
 }
 treeview.view.expander:disabled {
   color: rgba(255, 255, 255, 0.26);
@@ -2685,7 +2690,6 @@ printdialog paper {
   border: 1px solid rgba(255, 255, 255, 0.12);
   background-clip: padding-box;
   background-color: #1e1e1e;
-  color: rgba(255, 255, 255, 0.87);
 }
 printdialog .dialog-action-box {
   margin: 12px;
@@ -2875,7 +2879,7 @@ expander title > arrow:checked:dir(rtl) {
   -gtk-icon-transform: rotate(180deg);
 }
 expander title > arrow:hover, expander title > arrow:active {
-  color: rgba(255, 255, 255, 0.87);
+  color: black;
 }
 expander title > arrow:disabled {
   color: rgba(255, 255, 255, 0.26);
@@ -2897,6 +2901,7 @@ calendar:disabled {
 calendar:selected {
   border-radius: 5px;
   background-color: rgba(242, 245, 248, 0.24);
+  color: black;
 }
 calendar.header {
   border-style: none none solid;
@@ -2932,7 +2937,6 @@ messagedialog .titlebar {
   border-style: none;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.05);
   background-color: #2e2e2e;
-  color: rgba(255, 255, 255, 0.87);
 }
 messagedialog .titlebar:backdrop {
   background-color: #2e2e2e;
@@ -3334,7 +3338,6 @@ colorswatch overlay:drop(active), colorswatch overlay:hover {
 }
 colorswatch#add-color-button {
   border-radius: 4px 4px 0 0;
-  color: rgba(255, 255, 255, 0.87);
 }
 colorswatch#add-color-button:only-child {
   border-radius: 4px;
