@@ -20,3 +20,6 @@ fastfetch
 openssh-client
 xfce4-docklike-plugin
 slick-greeter
+zsh
+zsh-autosuggestions
+zsh-syntax-highlighting
