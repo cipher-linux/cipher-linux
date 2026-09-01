@@ -30,6 +30,16 @@ Rule: if a config file needs to exist in the user's home directory on first boot
 Wrong: config/includes.chroot/home/user/.config/...
 Right: config/includes.chroot/etc/skel/.config/...
 
+Calamares custom module instances go in settings.conf, not a separate file
+If you're wiring up a custom Calamares module instance (e.g. shellprocess@usershell), the id/module/config mapping is declared via a top-level instances: key inside /etc/calamares/settings.conf itself — there is no separate instances.conf file that Calamares reads. Creating one will be silently ignored, and the module falls back to its default config file (<modulename>.conf), which usually has no real commands in it — showing up as a cryptic "No script given" / "No commands to execute" warning in calamares -D 8 debug output, with no indication the instance file itself is the problem.
+
+instances:
+- id:       usershell
+  module:   shellprocess
+  config:   shellprocess-usershell.conf
+
+This caused new users to stay on /bin/bash after Calamares install despite the shellprocess job and script both being correctly configured — the instance mapping itself was the missing piece.
+
 Code of Conduct
 
 * Be respectful and constructive
