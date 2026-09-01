@@ -3,6 +3,6 @@
 <channel name="xsettings" version="1.0">
   <property name="Net" type="empty">
     <property name="ThemeName" type="string" value="Cipher-dark"/>
-    <property name="IconThemeName" type="string" value="Flat-Remix-Slate-Dark"/>
+    <property name="IconThemeName" type="string" value="Adwaita"/>
   </property>
 </channel>
