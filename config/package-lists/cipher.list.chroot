@@ -4,6 +4,11 @@ network-manager-applet
 xfce4
 xfce4-power-manager
 xfce4-whiskermenu-plugin
+pipewire
+pipewire-pulse
+pipewire-alsa
+wireplumber
+pulseaudio-utils
 calamares
 calamares-settings-debian
 librsvg2-common
@@ -23,6 +28,5 @@ slick-greeter
 zsh
 zsh-autosuggestions
 zsh-syntax-highlighting
-xfce4-terminal
 xfce4-terminal
 breeze-icon-theme
