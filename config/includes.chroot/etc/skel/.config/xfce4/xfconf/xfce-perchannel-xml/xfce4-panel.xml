@@ -3,15 +3,15 @@
   <property name="configver" type="int" value="2"/>
   <property name="panels" type="array">
     <value type="int" value="1"/>
-    <value type="int" value="2"/>
     <property name="panel-1" type="empty">
       <property name="length" type="uint" value="100"/>
+      <property name="length-adjust" type="bool" value="true"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="1"/>
         <value type="int" value="2"/>
         <value type="int" value="3"/>
         <value type="int" value="4"/>
-        <value type="int" value="5"/>
+        <value type="int" value="11"/>
         <value type="int" value="6"/>
         <value type="int" value="7"/>
         <value type="int" value="8"/>
@@ -19,21 +19,10 @@
         <value type="int" value="10"/>
         <value type="int" value="12"/>
       </property>
-      <property name="position" type="string" value="p=6;x=0;y=0"/>
-      <property name="position-locked" type="bool" value="true"/>
-      <property name="size" type="uint" value="34"/>
-    </property>
-    <property name="panel-2" type="empty">
-      <property name="length" type="uint" value="1"/>
-      <property name="length-adjust" type="bool" value="true"/>
-      <property name="plugin-ids" type="array">
-        <value type="int" value="11"/>
-      </property>
       <property name="position" type="string" value="p=10;x=0;y=0"/>
       <property name="position-locked" type="bool" value="true"/>
-      <property name="size" type="uint" value="48"/>
-      <property name="autohide-behavior" type="uint" value="1"/>
-      <property name="background-style" type="uint" value="0"/>
+      <property name="size" type="uint" value="40"/>
+      <property name="autohide-behavior" type="uint" value="0"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -41,10 +30,6 @@
     <property name="plugin-2" type="string" value="separator"/>
     <property name="plugin-3" type="string" value="showdesktop"/>
     <property name="plugin-4" type="string" value="pager"/>
-    <property name="plugin-5" type="string" value="tasklist">
-      <property name="grouping" type="uint" value="1"/>
-      <property name="show-labels" type="bool" value="false"/>
-    </property>
     <property name="plugin-6" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
       <property name="style" type="uint" value="0"/>

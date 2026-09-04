@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Terminal
+GenericName=Terminal Emulator
+Comment=CIPHER Linux terminal
+Exec=xfce4-terminal
+Icon=utilities-terminal
+Terminal=false
+StartupNotify=true
+StartupWMClass=xfce4-terminal
+Categories=System;TerminalEmulator;
