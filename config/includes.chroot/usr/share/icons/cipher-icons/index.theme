@@ -2,7 +2,7 @@
 Name=CIPHER Icons
 Comment=CIPHER Linux icon overrides on top of Breeze Dark
 Inherits=breeze-dark
-Directories=places/48,apps/48,devices/64
+Directories=places/48,apps/48,devices/64,status/16,status/22
 
 [places/48]
 Size=48
@@ -17,4 +17,14 @@ Type=Fixed
 [devices/64]
 Size=64
 Context=Devices
+Type=Fixed
+
+[status/16]
+Size=16
+Context=Status
+Type=Fixed
+
+[status/22]
+Size=22
+Context=Status
 Type=Fixed
