@@ -23,6 +23,7 @@ net-tools
 mousepad
 fastfetch
 openssh-client
+openssh-server
 xfce4-docklike-plugin
 slick-greeter
 zsh
