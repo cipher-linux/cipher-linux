@@ -1,9 +1,9 @@
 Package: cipher-forensics
-Version: 1.0
+Version: 1.1
 Section: metapackages
 Priority: optional
 Architecture: amd64
-Depends: binwalk, exiftool, steghide, foremost, sleuthkit, hexedit, bulk-extractor
+Depends: binwalk, exiftool, steghide, foremost, sleuthkit, hexedit
 Maintainer: CIPHER Linux <team@cipherlinux.org>
 Description: CIPHER Linux forensics toolkit
  Installs digital forensics and CTF-style analysis tools for CIPHER
