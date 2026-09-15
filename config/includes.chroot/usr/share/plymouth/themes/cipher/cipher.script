@@ -13,7 +13,21 @@ Window.SetBackgroundBottomColor(0, 0, 0);
  * Logo sprite
  * --------------------------------------------------------- */
 
-logo_image = Image("frames/00.png");
+logo_image_raw = Image("frames/00.png");
+
+/*
+ * Scale to a fixed proportion of window height, not the source
+ * file's raw pixel size — keeps the full mark + wordmark + tagline
+ * on screen regardless of source resolution or display resolution.
+ * Source art is a square canvas (logo + text + tagline stacked
+ * inside one image), so scale by height and let width follow.
+ */
+
+logo_target_height = Window.GetHeight() * 0.55;
+logo_scale_ratio = logo_target_height / logo_image_raw.GetHeight();
+logo_target_width = logo_image_raw.GetWidth() * logo_scale_ratio;
+
+logo_image = logo_image_raw.Scale(logo_target_width, logo_target_height);
 logo_sprite = Sprite(logo_image);
 
 logo_x = Window.GetWidth() / 2 - logo_image.GetWidth() / 2;
