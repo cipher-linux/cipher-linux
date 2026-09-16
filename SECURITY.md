@@ -28,4 +28,4 @@ This policy covers vulnerabilities in CIPHER Linux's own build tooling, packages
 
 ## GPG Signing
 
-Starting with `v1.0 "Enigma"`, official ISO releases will be signed with a project GPG key so you can verify authenticity and integrity before installing. Details and the public key will be published alongside the release.
+CIPHER Linux ISO releases are GPG-signed for authenticity and integrity verification, starting from our first release candidate. The public key and verification steps are published alongside each release.
