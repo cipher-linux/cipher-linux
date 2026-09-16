@@ -29,6 +29,7 @@ fixed found while testing RC1.
   Utilities) with clean selection highlight
 - Six optional metapackages (`cipher-admin`, `cipher-network`, 
   `cipher-security`, `cipher-forensics`, `cipher-dev`, `cipher-devops`)
+- Fixed lockscreen wallpapaer - now a distinct image from the desktop wallpaper (previously identical)
 
 ## Known Issues
 
@@ -38,8 +39,6 @@ fixed found while testing RC1.
   itself once boot continues; root cause not yet confirmed
 * Memtest86+ deferred; current package format isn't compitable with
   live-build's grub.cfg detection, needs a custom loopback boot entry
-* Lockscreen Wallpaper currently identical to desktop wallpaper; a
-  distinct lockscreen image is planned
 * Additional packages - package selection still being expanded
 * General desktop polish
 
