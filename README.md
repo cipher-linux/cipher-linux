@@ -7,9 +7,9 @@
 *Secure. Private. Yours.*
 
 [![Status](https://img.shields.io/badge/status-in%20development-orange)]()
-[![License](https://img.shields.io/badge/license-TBD-lightgrey)]()
-[![Base](https://img.shields.io/badge/base-Debian%2FKali-blue)]()
-[![Desktop](https://img.shields.io/badge/desktop-XFCE%20%7C%20GNOME-informational)]()
+[![License](https://img.shields.io/badge/license-GPLv3-blue)]()
+[![Base](https://img.shields.io/badge/base-Debian-blue)]()
+[![Desktop](https://img.shields.io/badge/desktop-XFCE-informational)]()
 
 </div>
 
@@ -42,25 +42,24 @@ CIPHER Linux borrows the best of five distros that already got something right:
 
 ## Current Status
 
-🚧 **Active development — core build pipeline working, branding and installer in progress.**
+🚧 **Active development — core build pipeline working, branding nearly complete.**
 
 CIPHER Linux already boots and installs end-to-end:
 
 - ✅ Custom `live-build` pipeline producing a working, bootable ISO (BIOS + UEFI)
 - ✅ Calamares installer integrated — full install-to-disk tested working
-- ✅ Custom local APT repo for CIPHER packages
-- ✅ First custom `.deb` package built (`cipher-welcome`)
-- ✅ CIPHER branding applied: custom GRUB theme, desktop wallpaper, Calamares branding, `/etc/os-release`
-- 🚧 Plymouth boot-splash theme — in progress
+- ✅ Custom local APT repo for CIPHER packages, GPG-signed and apt-verified
+- ✅ Six optional metapackages (`cipher-admin`, 'cipher-network', 'cipher-security', 'cipher-forensics', 'cipher-dev', 'cipher-devops') plus 'cipher-welocome' v2.0.0 guided onboarding tool
+- ✅ CIPHER branding applied: custom GRUB theme, Plymouth boot splash, desktop wallpaper, Calamares branding, `/etc/os-release`
 - 🚧 Final GRUB menu polish — in progress
-- ⏳ GPG-signed releases — planned before v1.0
+- 🚧 Final GRUB menu polish — in progress
 - ⏳ DistroWatch submission — planned after v1.0
 
 See the [Roadmap](#roadmap) below for the full path to `v1.0 "Enigma"`.
 
 ## Download
 
-Not yet available. The first prototype release will be published under [Releases](../../releases) once the build pipeline reaches a stable checkpoint. Star/watch the repo to get notified.
+The first prototype is available as a pre-release: **[v1.0.0-rc1](../../releases/tag/v1.0.0-rc1)** - includes the ISO, SHA256 checksum, and GPG signature. Not yet stable; use for testing and feedback only. Star/watch the repo to get notified when v1.0 "Enigma" ships.
 
 ## Roadmap
 
@@ -99,7 +98,7 @@ We're documenting the entire build process in the open — the wins and the mult
 
 ## License
 
-License to be finalized before v1.0 — see [LICENSE](LICENSE) once published.
+CIPHER Linux is licensed under the [GNU GPLv3](LICENSE).
 
 ---
 
