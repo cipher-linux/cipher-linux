@@ -29,10 +29,14 @@ fixed found while testing RC1.
   Utilities) with clean selection highlight
 - Six optional metapackages (`cipher-admin`, `cipher-network`, 
   `cipher-security`, `cipher-forensics`, `cipher-dev`, `cipher-devops`)
-- Fixed lockscreen wallpapaer - now a distinct image from the desktop wallpaper (previously identical)
+- Fixed lockscreen wallpapaer - now a distinct image from the desktop 
+  wallpaper (previously identical)
 
 ## Known Issues
 
+* Tray icon sizing inconsistency - battery and speaker icons render at a 
+  slightly different visual size than the LAN icon in the panel; cosmetic
+  only, not yet fixed
 * GRUB background can appear as a plain black box (instead of the
   CIPHER artwork) during the "Loading Linux.../ Loading initial
   ramdisk" text on some virtual machines - cosmetic only, resolves
@@ -40,7 +44,6 @@ fixed found while testing RC1.
 * Memtest86+ deferred; current package format isn't compitable with
   live-build's grub.cfg detection, needs a custom loopback boot entry
 * Additional packages - package selection still being expanded
-* General desktop polish
 
 ## Download & Verify
 
