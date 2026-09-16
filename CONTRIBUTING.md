@@ -40,6 +40,17 @@ instances:
 
 This caused new users to stay on /bin/bash after Calamares install despite the shellprocess job and script both being correctly configured — the instance mapping itself was the missing piece.
 
+Always verify a fix acutally landed in git before moving on
+
+it's easy to test something live in a VM (or via scp/cp straight into running system), confirm it works, and mentally file it as "done" - without ever actually committing to the real build source. The build source is what lb build reads from; a live VM or an installed system is a completely seperate filesystem that vanished the moment you rebuild.
+
+This has bittten us more than once: a GRUB theme fix, a Plymouth splash rewrite and a gfxpayload cleanup were all tested and confirmed working live, but sat uncommitted for a full session (or longer) before anyone noticed git log didn't actually show the change. Each time, the fix loaded "still broken" on the next rebuild - not because the fix was wrong, but because it was never in the source at all.
+
+Rule: after testing any fix live, immediately run git status and git diff on the specific file(s) you changed, before doing anything else. if the change doesn't show up as modified/staged. it isn't real yet - it only exists in the live environment and will be lost on the next rebuild.
+
+Wrong: test fix live → move on to the next task → assume it'll still be there"
+Right: test fix live → git status/git diff to confirm → git add + git commit → then move on
+
 Code of Conduct
 
 * Be respectful and constructive
