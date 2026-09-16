@@ -17,7 +17,6 @@ binary.modified_timestamps
 chroot.packages.install
 chroot.packages.live
 chroot.packages.remove
-config/binary
 wget-log*
 *.hybrid.iso
 *.deb
