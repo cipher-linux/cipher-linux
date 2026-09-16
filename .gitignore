@@ -23,3 +23,6 @@ wget-log*
 *.deb
 *.iso.asc
 *.iso.sha256
+calamares-3.3.5/
+calamares_3.3.5*
+*.deb
