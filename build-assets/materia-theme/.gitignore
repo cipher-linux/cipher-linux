@@ -1,4 +1,0 @@
-*.pem
-tmp/
-*build*/
-node_modules/

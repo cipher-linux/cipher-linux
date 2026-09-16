@@ -26,3 +26,4 @@ wget-log*
 calamares-3.3.5/
 calamares_3.3.5*
 *.deb
+build-assets/materia-theme/
