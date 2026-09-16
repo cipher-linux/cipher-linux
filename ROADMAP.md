@@ -42,7 +42,6 @@ Every release from v1.0 onward will carry its own cipher/cryptography-themed cod
 - [x] Calamares installer branding
 - [x] `/etc/os-release` updated with CIPHER Linux identity
 - [ ] Final GRUB menu polish
-- [ ] Both XFCE and GNOME desktop variants fully branded
 
 **Status: In progress**
 
@@ -52,11 +51,11 @@ Every release from v1.0 onward will carry its own cipher/cryptography-themed cod
 
 **Goal:** First stable, public, signed release.
 
-- [ ] GPG-signed ISO + published public key
-- [ ] SHA256 checksums published with every release
+- [x] GPG-signed ISO + published public key
+- [x] SHA256 checksums published with every release
 - [ ] Full install documentation
 - [ ] Public release notes (What's New / Known Issues / Credits)
-- [ ] Repo hygiene complete: LICENSE, CONTRIBUTING, CODE_OF_CONDUCT, SECURITY ✅
+- [x] Repo hygiene complete: LICENSE, CONTRIBUTING, CODE_OF_CONDUCT, SECURITY 
 
 **Status: Planned**
 
@@ -69,6 +68,7 @@ Every release from v1.0 onward will carry its own cipher/cryptography-themed cod
 - [ ] Submit to DistroWatch
 - [ ] Launch a dedicated website (cipherlinux.org / cipherlinux.com)
 - [ ] Expand guided cybersecurity tooling
+- [ ] GNOME desktop variant (in addition to XFCE)
 - [ ] Optional paid certification track
 - [ ] Grow contributor and tester base
 
