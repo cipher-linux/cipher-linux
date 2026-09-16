@@ -52,7 +52,6 @@ CIPHER Linux already boots and installs end-to-end:
 - ✅ Six optional metapackages (`cipher-admin`, 'cipher-network', 'cipher-security', 'cipher-forensics', 'cipher-dev', 'cipher-devops') plus 'cipher-welocome' v2.0.0 guided onboarding tool
 - ✅ CIPHER branding applied: custom GRUB theme, Plymouth boot splash, desktop wallpaper, Calamares branding, `/etc/os-release`
 - 🚧 Final GRUB menu polish — in progress
-- 🚧 Final GRUB menu polish — in progress
 - ⏳ DistroWatch submission — planned after v1.0
 
 See the [Roadmap](#roadmap) below for the full path to `v1.0 "Enigma"`.
