@@ -4,7 +4,7 @@ Section: metapackages
 Priority: optional
 Architecture: amd64
 Depends: build-essential, python3-pip, python3-venv, default-jdk
-Maintainer: CIPHER Linux <team@cipherlinux.org>
+Maintainer: CIPHER Linux <sachinshady6@gmail.com>
 Description: CIPHER Linux development toolkit
  Installs core development tools and language runtimes for CIPHER
  Linux users learning software development fundamentals.
