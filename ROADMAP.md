@@ -36,7 +36,8 @@ Every release from v1.0 onward will carry its own cipher/cryptography-themed cod
 
 **Goal:** CIPHER Linux looks and feels like its own distro, not reskinned Kali.
 
-- [x] Custom GRUB boot theme
+- [x] Custom GRUB boot theme (BIOS)
+- [ ] Custom GRUB boot theme (EFI) — currently only splash.png, no theme.cfg/config.cfg
 - [x] Custom Plymouth boot-splash theme
 - [x] Desktop wallpaper + visual identity applied
 - [x] Calamares installer branding
