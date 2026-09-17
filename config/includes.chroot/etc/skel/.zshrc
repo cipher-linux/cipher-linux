@@ -1,3 +1,6 @@
+PROMPT='%F{#A970FF}┌──(%F{#A970FF}%n %F{#C792FF}Ⓒ%F{#A970FF} %m%F{#A970FF})-[%f%~%F{#A970FF}]
+%F{#A970FF}└─%F{#C792FF}%(!.#.$)%f '
+
 # CIPHER Linux — Kali-style terminal spacing (blank line before prompt)
 typeset -g _first_prompt=1
 precmd() {

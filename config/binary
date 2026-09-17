@@ -25,7 +25,7 @@ LB_BOOTLOADER_BIOS="grub-pc"
 LB_BOOTLOADER_EFI="grub-efi"
 
 # Set bootloaders
-LB_BOOTLOADERS=""
+LB_BOOTLOADERS="grub-pc grub-efi"
 
 # Set checksums
 LB_CHECKSUMS="sha256"

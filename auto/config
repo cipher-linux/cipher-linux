@@ -1,0 +1,9 @@
+#!/bin/sh
+set -e
+
+lb config noauto \
+    --architectures amd64 \
+    --distribution trixie \
+    --archive-areas "main contrib non-free non-free-firmware" \
+    --bootloaders "grub-pc grub-efi" \
+    "${@}"
