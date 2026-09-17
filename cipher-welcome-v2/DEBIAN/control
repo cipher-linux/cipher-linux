@@ -1,0 +1,11 @@
+Package: cipher-welcome
+Version: 2.0.0
+Architecture: amd64
+Section: utils
+Priority: optional
+Maintainer: Sachin M <sachin@cipherlinux.org>
+Depends: bash
+Description: CIPHER Linux Learning Hub
+ An on-demand guided menu covering Linux basics, networking, sysadmin,
+ security, forensics, and DevOps. Checks which CIPHER metapackage
+ unlocks each topic's tools and suggests a first command to try.
