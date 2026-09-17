@@ -3,7 +3,7 @@ Version: 2.0.0
 Architecture: amd64
 Section: utils
 Priority: optional
-Maintainer: Sachin M <sachin@cipherlinux.org>
+Maintainer: Sachin M <sachinshady6@gmail.com>
 Depends: bash
 Description: CIPHER Linux Learning Hub
  An on-demand guided menu covering Linux basics, networking, sysadmin,
