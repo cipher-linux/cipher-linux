@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=CIPHER Bookmarks Setup
+Exec=/etc/cipher/setup-user-bookmarks.sh
+NoDisplay=true
+X-GNOME-Autostart-enabled=true
