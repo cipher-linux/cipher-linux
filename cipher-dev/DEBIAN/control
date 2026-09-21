@@ -1,9 +1,9 @@
 Package: cipher-dev
-Version: 1.0
+Version: 1.1
 Section: metapackages
 Priority: optional
 Architecture: amd64
-Depends: build-essential, python3-pip, python3-venv, default-jdk
+Depends: build-essential, python3-pip, python3-venv, default-jdk, nodejs, npm
 Maintainer: CIPHER Linux <sachinshady6@gmail.com>
 Description: CIPHER Linux development toolkit
  Installs core development tools and language runtimes for CIPHER
