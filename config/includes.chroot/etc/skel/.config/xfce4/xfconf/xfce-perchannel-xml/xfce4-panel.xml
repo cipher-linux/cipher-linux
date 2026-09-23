@@ -6,6 +6,7 @@
     <value type="int" value="1"/>
     <property name="panel-1" type="empty">
       <property name="length" type="uint" value="100"/>
+      <property name="icon-size" type="uint" value="16"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="1"/>
         <value type="int" value="2"/>
