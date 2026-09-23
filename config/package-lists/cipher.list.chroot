@@ -39,3 +39,8 @@ zip
 unzip
 fonts-symbola
 gvfs-backends
+firmware-linux
+firmware-realtek
+firmware-iwlwifi
+firmware-misc-nonfree
+firmware-amd-graphics
