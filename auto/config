@@ -7,4 +7,5 @@ lb config noauto \
     --archive-areas "main contrib non-free non-free-firmware" \
     --bootloaders "grub-pc grub-efi" \
     --bootappend-live "boot=live components quiet splash loglevel=3 username=cipher user-password=cipher" \
+    --chroot-squashfs-compression-type "zstd" \
     "${@}"

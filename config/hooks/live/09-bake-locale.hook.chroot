@@ -1,0 +1,10 @@
+#!/bin/sh
+set -e
+
+sed -i 's/^# *en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen
+sed -i 's/^# *en_IN UTF-8/en_IN UTF-8/' /etc/locale.gen
+locale-gen --keep-existing
+echo "LANG=en_US.UTF-8" > /etc/default/locale
+
+mkdir -p /var/lib/live/config
+touch /var/lib/live/config/locales

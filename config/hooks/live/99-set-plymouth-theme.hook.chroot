@@ -1,5 +1,5 @@
 #!/bin/sh
 set -e
-plymouth-set-default-theme -R cipher
-update-initramfs -u -k all
+plymouth-set-default-theme cipher
+update-initramfs -u -k all || true
 exit 0
