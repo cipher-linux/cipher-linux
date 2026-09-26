@@ -1,13 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-  <defs>
-    <linearGradient id="gth" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#3a3d40"/>
-      <stop offset="1" stop-color="#202224"/>
-    </linearGradient>
-  </defs>
-  <rect x="5" y="7" width="38" height="34" rx="7" fill="url(#gth)"/>
-  <rect x="12" y="14" width="24" height="8" rx="1.5" fill="none" stroke="#c9cdd1" stroke-width="1.8"/>
-  <circle cx="16" cy="18" r="1" fill="#c9cdd1"/>
-  <rect x="12" y="24" width="24" height="10" rx="1.5" fill="#c9cdd1"/>
-  <circle cx="16" cy="29" r="1" fill="#202224"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M6 12 A2 2 0 0 1 8 10 H17.5 L20 13 H38 A2 2 0 0 1 40 15 V34 A2 2 0 0 1 38 36 H8 A2 2 0 0 1 6 34 Z" fill="none" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/><path d="M8 10 H17.5 L20 13 H8 Z" fill="#48D9F5" opacity="0.9"/><line x1="13" y1="21" x2="33" y2="21" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" opacity="0.85"/><line x1="13" y1="26" x2="28" y2="26" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" opacity="0.85"/><line x1="13" y1="31" x2="24" y2="31" stroke="#48D9F5" stroke-width="1.6" stroke-linecap="round"/></svg>
