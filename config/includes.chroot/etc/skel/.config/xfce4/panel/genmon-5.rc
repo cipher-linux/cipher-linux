@@ -1,0 +1,5 @@
+Command=/usr/local/bin/cipher-battery-genmon.sh
+UseLabel=0
+Text=(genmon)
+UpdatePeriod=5000
+Font=Sans 10
