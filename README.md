@@ -42,7 +42,7 @@ CIPHER Linux borrows the best of five distros that already got something right:
 
 ## Current Status
 
-🚧 **Active development — core build pipeline working, branding nearly complete.**
+🚧 **Active development — core build pipeline and branding complete, hardware compatibility and polish underway.**
 
 CIPHER Linux already boots and installs end-to-end:
 
@@ -51,14 +51,18 @@ CIPHER Linux already boots and installs end-to-end:
 - ✅ Custom local APT repo for CIPHER packages, GPG-signed and apt-verified
 - ✅ Six optional metapackages (`cipher-admin`, 'cipher-network', 'cipher-security', 'cipher-forensics', 'cipher-dev', 'cipher-devops') plus 'cipher-welocome' v2.0.0 guided onboarding tool
 - ✅ CIPHER branding applied: custom GRUB theme, Plymouth boot splash, desktop wallpaper, Calamares branding, `/etc/os-release`
-- 🚧 Final GRUB menu polish — in progress
+- ✅ Custom CIPHER-ICONS icon theme and cyan battery gauge
+- ✅ Broader hardware support via added firmware packages
+- 🚧 General desktop polish and package selection — in progress
 - ⏳ DistroWatch submission — planned after v1.0
 
 See the [Roadmap](#roadmap) below for the full path to `v1.0 "Enigma"`.
 
 ## Download
 
-The first prototype is available as a pre-release: **[v1.0.0-rc1](../../releases/tag/v1.0.0-rc1)** - includes the ISO, SHA256 checksum, and GPG signature. Not yet stable; use for testing and feedback only. Star/watch the repo to get notified when v1.0 "Enigma" ships.
+The latest release candidate is **[v1.0.0-rc3](https://github.com/cipher-linux/cipher-linux/releases/tag/rc3)** includes the ISO (hosted on Archive.org due to Github's size limit), SHA256 checksum, and GPG signature. Not yet stable; use for testing and feedback only.
+
+See all release candidate on the [Release Page](https://github.com/cipher-linux/cipher-linux/releases). Star/Watch the repo to get notified when v1.0 "Enigma" ships.
 
 ## Roadmap
 
@@ -66,7 +70,8 @@ The first prototype is available as a pre-release: **[v1.0.0-rc1](../../releases
 |---|---|---|
 | **v0.1 — First Boot** | Working bootable ISO via live-build | ✅ Done |
 | **v0.5 — Installable** | Calamares installer, install-to-disk working | ✅ Done |
-| **v0.8 — Branded** | Full CIPHER visual identity: GRUB, Plymouth, desktop, installer | 🚧 In progress |
+| **v0.8 — Branded** | Full CIPHER visual identity: GRUB, Plymouth, desktop, installer | ✅ Done |
+| **v0.9 — Compatible & Polished** | Firmware/hardware support, icon theme, remaining desktop polish | 🚧 In progress | 
 | **v1.0 — "Enigma"** | First stable, signed public release | ⏳ Planned |
 | **Post-1.0** | DistroWatch submission, dedicated website, community growth | ⏳ Planned |
 
