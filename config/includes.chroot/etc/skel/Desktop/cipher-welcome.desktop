@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=CIPHER Welcome
+Comment=Guided learning menu for CIPHER Linux
+Exec=xfce4-terminal -e cipher-welcome
+Icon=utilities-terminal
+Terminal=false
+Categories=System;Education;
