@@ -49,7 +49,7 @@ Double-click the **install CIPHER Linux** icon on the desktop. Calamares will wa
 
 Installation takes 10-20 minutes depending on your hardware. Once done, restart and remove the USB drive. 
 
-##7. First boot
+## 7. First boot
 
 After Installing, you'll find **CIPHER Welcome** on your desktop. Double-click it to open the guided learning menu, which covers Linux basics, networking, system administration, security, forensics, DevOps and CTF Practice, with a suggested first step for each. It's a good place to start if you're not sure what to try first.
 
