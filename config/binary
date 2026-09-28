@@ -86,7 +86,7 @@ LB_ISO_VOLUME="Debian trixie @ISOVOLUME_TS@"
 LB_JFFS2_ERASEBLOCK=""
 
 # Set memtest
-LB_MEMTEST="none"
+LB_MEMTEST="memtest86+"
 
 # Set loadlin
 LB_LOADLIN="false"
