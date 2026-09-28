@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=CIPHER launcher trust
+Exec=/usr/local/bin/cipher-trust-launchers
+NoDisplay=true
+X-GNOME-Autostart-enabled=true

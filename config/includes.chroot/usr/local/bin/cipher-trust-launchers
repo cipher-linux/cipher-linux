@@ -1,0 +1,4 @@
+#!/bin/sh
+f="$HOME/Desktop/cipher-welcome.desktop"
+[ -f "$f" ] || exit 0
+gio set -t string "$f" metadata::xfce-exe-checksum "$(sha256sum "$f" | cut -d' ' -f1)"
