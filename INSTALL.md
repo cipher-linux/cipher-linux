@@ -8,11 +8,27 @@ Grab the latest release candidate from the [Releases page](https://github.com/ci
 
 ## 2. Verify your download (recommended)
 
-This confirms the ISO wasn't corrupted or tampered with. First, import the CIPHER Linux signing key:
+This confirms the ISO wasn't corrupted or tampered with. First, import the CIPHER Linux signing key that matches your release.
+
+**For rc4 and later:**
 
 ```bash
+curl -sSL https://raw.githubusercontent.com/cipher-linux/cipher-linux/main/cipher-linux-signing-key-2.asc | gpg --import
+```
+
+Check that the fingerprint matches:
+
+```bash
+gpg --fingerprint 8A3F56EB7DF1265b
+```
+`D033 F496 8BFA 3FC6 E486 5A01 8A3F 56EB 7DF1 265B`
+
+**For rc2 and rc3:**
+
+```bash 
 curl -sSL https://raw.githubusercontent.com/cipher-linux/cipher-linux/main/cipher-linux-signing-key.asc | gpg --import
 ```
+
 Check that the fingerprint it shows matches:
 
 ```bash
@@ -20,12 +36,13 @@ gpg --fingerprint 2B2C7B5EA01E52DC
 ```
 `49DF D2B3 26AF 3564 8255 D593 2B2C 7B5E A01E 52DC`
 
-Then open a terminal in the folder with all three files and run the two commands below, swapping in the actual filenames you downloaded:
+Then whichever key you imported, open a terminal in the folder with all three downloaded files and run the two commands below, swapping in the actual filenames you downloaded: 
+
 ```bash
 sha256sum -c cipher-linux-<version>.iso.sha256
 gpg --verify cipher-linux-<version>.iso.asc cipher-linux-<version>.iso
 ```
-you should see `OK` for the checksum and "Good Signature" from CIPHER Linux for the GPG step. GPG may also warn that the key isn't certified with a trusted signature - that's normal for a new key, and matching the fingerprint above is what matters.
+you should see `OK` for the checksum and "Good Signature" for the GPG step.GPG may also warn that the key isn't certified with a trusted signature - that's normal for a new key, and matching the fingerprint above is what matters.
 
 ## 3. Create a bootable USB drive
 
