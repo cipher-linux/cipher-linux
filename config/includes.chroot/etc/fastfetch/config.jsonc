@@ -1,5 +1,11 @@
 {
   "logo": {
-    "source": "/etc/fastfetch/cipher-logo.txt"
-  }
+    "source": "/etc/fastfetch/cipher-logo.txt",
+    "color": { "1": "blue" },
+    "padding": { "right": 4 }
+  },
+  "display": {
+    "color": { "keys": "blue", "title": "blue" }
+  },
+  "modules": ["title", "separator", "os", "kernel", "uptime", "packages", "shell", "de", "cpu", "memory", "break", "colors"]
 }
