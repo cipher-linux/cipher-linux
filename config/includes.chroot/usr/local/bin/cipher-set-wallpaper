@@ -34,6 +34,10 @@ for mon in $MONITORS; do
 done
 echo "  monitor properties created" >> "$LOG"
 
+# 2b. Super key opens the whisker menu
+xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/Super_L" -n -t string -s "xfce4-popup-whiskermenu"
+echo "  super key bound" >> "$LOG"
+
 # 3. Restart xfdesktop
 OLD_PID=$(pgrep -x xfdesktop)
 if [ -n "$OLD_PID" ]; then
