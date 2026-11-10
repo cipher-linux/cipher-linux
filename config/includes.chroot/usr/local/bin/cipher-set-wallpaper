@@ -12,11 +12,29 @@ done
 sleep 2
 
 WALLPAPER="/usr/share/backgrounds/cipher/cipher-wallpaper.png"
+
+# 1. Update properties that already exist
 for prop in $(xfconf-query -c xfce4-desktop -l | grep -E "(image-path|last-image|last-single-image)$"); do
     xfconf-query -c xfce4-desktop -p "$prop" -s "$WALLPAPER"
 done
-echo "  properties set (including last-single-image)" >> "$LOG"
+echo "  existing properties updated" >> "$LOG"
 
+# 2. Create properties for every connected monitor, both name spellings
+MONITORS=$(xrandr --query 2>/dev/null | awk '/ connected/{print $1}')
+echo "  monitors found: $MONITORS" >> "$LOG"
+
+for mon in $MONITORS; do
+    for name in "$mon" "${mon//-/}"; do
+        for ws in 0 1 2 3; do
+            base="/backdrop/screen0/monitor${name}/workspace${ws}"
+            xfconf-query -c xfce4-desktop -p "$base/last-image" -n -t string -s "$WALLPAPER"
+            xfconf-query -c xfce4-desktop -p "$base/image-style" -n -t int -s 5
+        done
+    done
+done
+echo "  monitor properties created" >> "$LOG"
+
+# 3. Restart xfdesktop
 OLD_PID=$(pgrep -x xfdesktop)
 if [ -n "$OLD_PID" ]; then
     kill "$OLD_PID"
