@@ -2,10 +2,38 @@
   "logo": {
     "source": "/etc/fastfetch/cipher-logo.txt",
     "color": { "1": "blue" },
-    "padding": { "right": 4 }
+    "padding": { "top": 4, "right": 4 }
   },
   "display": {
     "color": { "keys": "blue", "title": "blue" }
   },
-  "modules": ["title", "separator", "os", "kernel", "uptime", "packages", "shell", "de", "cpu", "memory", "break", "colors"]
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    "display",
+    "de",
+    "wm",
+    "wmtheme",
+    "theme",
+    "icons",
+    "font",
+    "cursor",
+    "terminal",
+    "terminalfont",
+    "cpu",
+    "gpu",
+    "memory",
+    "swap",
+    { "type": "disk", "folders": "/" },
+    "localip",
+    "locale",
+    "break",
+    "colors"
+  ]
 }
