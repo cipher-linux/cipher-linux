@@ -46,3 +46,6 @@ firmware-misc-nonfree
 firmware-amd-graphics
 libreoffice
 xfce4-genmon-plugin
+systemd-timesyncd
+ca-certificates
+systemd-timesyncd
