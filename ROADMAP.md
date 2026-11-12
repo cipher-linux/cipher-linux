@@ -4,6 +4,8 @@ This is the public roadmap for CIPHER Linux, from first boot to our first stable
 
 Every release from v1.0 onward will carry its own cipher/cryptography-themed codename, assigned alphabetically.
 
+**Where we are now:** release candidate stage. the latest pre-release is [rc5](https://github.com/cipher-linux/cipher-linux/release/tag/rc5).
+
 ---
 
 ## ✅ v0.1 — First Boot
@@ -12,7 +14,7 @@ Every release from v1.0 onward will carry its own cipher/cryptography-themed cod
 
 - Custom `live-build` pipeline producing a bootable ISO
 - Boots via USB or disc (iso-hybrid)
-- Base: Kali-rolling + XFCE desktop
+- Proof-of-concept base with the XFCE desktop (the base has since moved to Debian 13 "trixie")
 - No branding yet — proof of concept only
 
 **Status: Complete**
@@ -37,14 +39,34 @@ Every release from v1.0 onward will carry its own cipher/cryptography-themed cod
 **Goal:** CIPHER Linux looks and feels like its own distro, not reskinned Kali.
 
 - [x] Custom GRUB boot theme (BIOS)
-- [ ] Custom GRUB boot theme (EFI) — currently only splash.png, no theme.cfg/config.cfg
+- [x] Custom GRUB boot theme (EFI)
 - [x] Custom Plymouth boot-splash theme
 - [x] Desktop wallpaper + visual identity applied
 - [x] Calamares installer branding
 - [x] `/etc/os-release` updated with CIPHER Linux identity
-- [ ] Final GRUB menu polish
+- [x] Final GRUB menu polish
 
-**Status: In progress**
+**Status: Complete**
+
+---
+
+## 🚧 v0.9 — Compatible & Polished
+
+**Goal:** Work well on real hardware, not just virtual machines.
+
+- [x] Tested on real laptops
+- [x] Core firmware packages included (Realtek, intel Wi-Fi, AMD graphics, misc non-free
+- [x] Custom CIPHER-ICONS icon theme and cyan battery gauge
+- [x] Per-monitor wallpaper, Super key opens the menu, automatic time sync
+- [x] Optional full-disk encryption (LUKS) in the installer
+- [x] memtest86+ in the boot menu
+- [ ] Additional firmware and wider hardware coverage
+- [ ] Tiling shortcuts (Super + arrow keys)
+- [ ] Fix `cipher-forensics` failing to install in low-RAM live sessions
+- [ ] Tray icon sizing consistency
+- [ ] General desktop polish and package selection
+
+**Status: In Progress**
 
 ---
 
@@ -54,9 +76,11 @@ Every release from v1.0 onward will carry its own cipher/cryptography-themed cod
 
 - [x] GPG-signed ISO + published public key
 - [x] SHA256 checksums published with every release
-- [ ] Full install documentation
-- [ ] Public release notes (What's New / Known Issues / Credits)
+- [x] Full install documentation ([INSTALL.md](INSTALL.MD))
+- [x] Public release notes ([RELEASE_NOTES.md](RELEASE_NOTES.md))
 - [x] Repo hygiene complete: LICENSE, CONTRIBUTING, CODE_OF_CONDUCT, SECURITY 
+- [ ] Everything in v0.9 finished and tested on real hardware
+- [ ] Stable, signed public release
 
 **Status: Planned**
 
